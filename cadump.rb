@@ -6,7 +6,7 @@ casubject = nil
 i = 0
 
 f.each_line do |line|
-  if line.match(/Subject: /) 
+  if line.match(/Subject: /)
     casubject = line
     i += 1
   end
@@ -19,4 +19,4 @@ f.each_line do |line|
   end
 end
 
-puts "There were #{i.to_s} identified certificates"
+puts "There were #{i} identified certificates"
